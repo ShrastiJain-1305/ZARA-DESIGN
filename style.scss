@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
 }
 html,
 body {
@@ -15,6 +16,11 @@ body {
   background-color: #e4e4e4;
   font-family: "Lato", sans-serif;
 }
+ 
+* {
+  -webkit-tap-highlight-color: transparent !important;
+}
+
 main {
   width: 100%;
   padding: 1rem;
@@ -216,7 +222,7 @@ main {
       border-radius: 0.3rem;
       border: none;
       h4 {
-        font-size: 1.2rem;
+        font-size: 0.8rem;
         text-transform: uppercase;
       }
       p {
@@ -230,7 +236,7 @@ main {
   .p3 {
     max-width: 1480px;
     padding-top: 1rem;
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
     border-radius: 0.3rem;
     h3 {
       background-color: #ffffff;
@@ -269,22 +275,22 @@ main {
             background-image: url(p2.webp);
           }
           #top2 {
-             background-image: url(p22.webp);
+            background-image: url(p22.webp);
           }
           #top3 {
-             background-image: url(p23.webp);
+            background-image: url(p23.webp);
           }
           #top4 {
-             background-image: url(p24.webp);
+            background-image: url(p24.webp);
           }
           #top5 {
-             background-image: url(p25.webp);
-          } 
+            background-image: url(p25.webp);
+          }
           #top6 {
-           background-image: url(p26.webp);
+            background-image: url(p26.webp);
           }
           #top7 {
-           background-image: url(p27.webp);
+            background-image: url(p27.webp);
           }
           #top8 {
             background-image: url(p28.webp);
@@ -431,7 +437,7 @@ main {
       margin-top: 2.5rem;
       font-size: 1rem;
       text-transform: capitalize;
-      word-spacing: 0.8rem;
+      word-spacing: 0.4rem;
       color: #727171;
     }
     h5 {
@@ -687,12 +693,12 @@ main {
     nav {
       height: 5rem;
       .logo {
-        font-size: 4rem;
+        font-size: 2.8rem;
       }
       .det {
         h6 {
           i {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
           }
         }
         button {
@@ -717,6 +723,13 @@ main {
               }
             }
           }
+        }
+      }
+    }
+    .p2 {
+      .box {
+        h4 {
+          font-size: 1rem;
         }
       }
     }
@@ -792,6 +805,20 @@ main {
     }
   }
 }
+@media (min-width: 645px){
+  main{
+    .det {
+        .search-box {
+          display: block;
+          padding: 0.7rem 0rem;
+          padding-right: 0.5rem;
+        }
+        #del {
+          display: none;
+        }
+      }
+  }
+}
 @media (min-width: 680px) {
   main {
     .p4 {
@@ -806,16 +833,11 @@ main {
   main {
     nav {
       padding: 0rem 3rem;
-      .det {
-        .search-box {
-          display: block;
-          padding: 0.7rem 0rem;
-          padding-right: 0.5rem;
-        }
-        #del {
-          display: none;
-        }
+      height: 3.4rem;
+      .logo {
+        font-size: 3.2rem;
       }
+
     }
     .p1 {
       margin-top: 1rem;
@@ -872,8 +894,9 @@ main {
         background-color: #ffffff;
         padding: 1rem 1rem;
         text-align: center;
+        margin-top: 1.3rem;
         margin-bottom: 1.5rem;
-        font-size: 2.3rem;
+        font-size: 1.8rem;
         text-transform: capitalize;
         border: none;
         border-radius: 0.3rem;
@@ -948,6 +971,11 @@ main {
 }
 @media (min-width: 1024px) {
   main {
+    nav{
+           .logo {
+        font-size: 3.5rem;
+      }
+    }
     .p1 {
       .slider-container {
         .swiper-wrapper {

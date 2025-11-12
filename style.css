@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
 }
 
 html,
@@ -15,6 +16,10 @@ body {
   width: 100%;
   background-color: #e4e4e4;
   font-family: "Lato", sans-serif;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent !important;
 }
 
 main {
@@ -220,7 +225,7 @@ main .p2 .box {
   border: none;
 }
 main .p2 .box h4 {
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
 }
 main .p2 .box p {
@@ -231,7 +236,7 @@ main .p2 .box p {
 main .p3 {
   max-width: 1480px;
   padding-top: 1rem;
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
   border-radius: 0.3rem;
 }
 main .p3 h3 {
@@ -430,7 +435,7 @@ main .p5 h4 {
   margin-top: 2.5rem;
   font-size: 1rem;
   text-transform: capitalize;
-  word-spacing: 0.8rem;
+  word-spacing: 0.4rem;
   color: #727171;
 }
 main .p5 h5 {
@@ -678,10 +683,10 @@ main .p7 .container .ri #b1 .bottom div i {
     height: 5rem;
   }
   main nav .logo {
-    font-size: 4rem;
+    font-size: 2.8rem;
   }
   main nav .det h6 i {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   main nav .det button {
     display: block;
@@ -695,6 +700,9 @@ main .p7 .container .ri #b1 .bottom div i {
   main .p1 .slider-container .swiper-wrapper .swiper-slide .top .bottom div h4 {
     font-size: 1.5rem;
     width: 10rem;
+  }
+  main .p2 .box h4 {
+    font-size: 1rem;
   }
   main .p6 .container .butn {
     flex-direction: row;
@@ -738,6 +746,16 @@ main .p7 .container .ri #b1 .bottom div i {
     padding-right: 3rem;
   }
 }
+@media (min-width: 645px) {
+  main .det .search-box {
+    display: block;
+    padding: 0.7rem 0rem;
+    padding-right: 0.5rem;
+  }
+  main .det #del {
+    display: none;
+  }
+}
 @media (min-width: 680px) {
   main .p4 {
     grid-template-columns: repeat(3, 1fr);
@@ -749,14 +767,10 @@ main .p7 .container .ri #b1 .bottom div i {
 @media (min-width: 728px) {
   main nav {
     padding: 0rem 3rem;
+    height: 3.4rem;
   }
-  main nav .det .search-box {
-    display: block;
-    padding: 0.7rem 0rem;
-    padding-right: 0.5rem;
-  }
-  main nav .det #del {
-    display: none;
+  main nav .logo {
+    font-size: 3.2rem;
   }
   main .p1 {
     margin-top: 1rem;
@@ -805,8 +819,9 @@ main .p7 .container .ri #b1 .bottom div i {
     background-color: #ffffff;
     padding: 1rem 1rem;
     text-align: center;
+    margin-top: 1.3rem;
     margin-bottom: 1.5rem;
-    font-size: 2.3rem;
+    font-size: 1.8rem;
     text-transform: capitalize;
     border: none;
     border-radius: 0.3rem;
@@ -868,6 +883,9 @@ main .p7 .container .ri #b1 .bottom div i {
   }
 }
 @media (min-width: 1024px) {
+  main nav .logo {
+    font-size: 3.5rem;
+  }
   main .p1 .slider-container .swiper-wrapper .swiper-slide .top .im {
     height: 40rem;
     width: 60%;

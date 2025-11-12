@@ -1,7 +1,7 @@
 const swiper = new Swiper(".slider-container", {
   effect: "fade",
   loop: true,
-  speed: 1000,
+  speed: 800,
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,
