@@ -673,7 +673,7 @@ main .p7 .container .ri #b1 .bottom div i {
     height: 16rem;
   }
 }
-@media (min-width: 426px) {
+@media (min-width: 425px) {
   main nav {
     height: 5rem;
   }
